@@ -21,7 +21,7 @@ public class DesafioLogicaJava {
 		somaC = 0;
 		somaE = 0;
 		somaV = 0;
-		limiteContador = 2;
+		limiteContador = 15;
 		System.out.println("Digite 0 para iniciar ou qualquer outra teclar para cancelar");
 		iniciar = sc.nextInt();
 		
@@ -35,13 +35,13 @@ public class DesafioLogicaJava {
 			System.out.println("Digite o nome do produto");
 			nomeProduto = sc.next();
 			
-			System.out.println("Digite a categoria do produto: \n (1) para Cama, Mesa e Banho \n (2) para EletrodomÈsticos \n (3) para Vestu·rio");
+			System.out.println("Digite a categoria do produto: \n (1) para Cama, Mesa e Banho \n (2) para Eletrodom√©sticos \n (3) para Vestu√°rio");
 			categoria = sc.nextInt();
 			
 			System.out.println("Digite a quantidade de produtos em estoque");
 			qtd = sc.nextInt();
 			
-			System.out.println("Digite o valor unit·rio do produto em estoque: R$");
+			System.out.println("Digite o valor unit√°rio do produto em estoque: R$");
 			valorUni = sc.nextDouble();
 			
 			switch(categoria) {
@@ -55,7 +55,7 @@ public class DesafioLogicaJava {
 				quantidadeC ++;
 				System.out.printf("\nValor do Produto em Estoque: R$ %.2f", valorEstoque);
 				System.out.printf("\nValor do Imposto sobre produto: R$ %.2f", valorImposto);
-				System.out.printf("\nPreÁo Final do Produto (com margem de lucro: R$ %.2f)", precoFinal);
+				System.out.printf("\nPre√ßo Final do Produto (com margem de lucro: R$ %.2f)", precoFinal);
 				break;
 			case 2:
 				aliq = 0.4314;
@@ -67,7 +67,7 @@ public class DesafioLogicaJava {
 				quantidadeE ++;
 				System.out.printf("\nValor do Produto em Estoque: R$ %.2f", valorEstoque);
 				System.out.printf("\nValor do Imposto sobre produto: R$ %.2f", valorImposto);
-				System.out.printf("\nPreÁo Final do Produto (com margem de lucro: R$ %.2f)", precoFinal);
+				System.out.printf("\nPre√ßo Final do Produto (com margem de lucro: R$ %.2f)", precoFinal);
 				break;
 			case 3:
 				aliq = 0.3842;
@@ -79,21 +79,21 @@ public class DesafioLogicaJava {
 				quantidadeV ++;
 				System.out.printf("\nValor do Produto em Estoque: R$ %.2f", valorEstoque);
 				System.out.printf("\nValor do Imposto sobre produto: R$ %.2f", valorImposto);
-				System.out.printf("\nPreÁo Final do Produto (com margem de lucro: R$ %.2f)", precoFinal);				
+				System.out.printf("\nPre√ßo Final do Produto (com margem de lucro: R$ %.2f)", precoFinal);				
 				break;
 			default:
-					System.out.println("Categoria Inv·lida");
+					System.out.println("Categoria Inv√°lida");
 			};
 			
 			contador ++;
 			
 			System.out.printf("\nQuantidade de itens (1) Cama, Mesa e Banho: " + quantidadeC + ". Valor em estoque: R$ %.2f",somaC);
-			System.out.printf("\nQuantidade de itens (2) EletrodomÈsticos: " + quantidadeE + ". Valor em estoque: R$ %.2f",somaE);
-			System.out.printf("\nQuantidade de itens (3) Vestu·rio: " + quantidadeV + ". Valor em estoque: R$ %.2f",somaV);
+			System.out.printf("\nQuantidade de itens (2) Eletrodom√©sticos: " + quantidadeE + ". Valor em estoque: R$ %.2f",somaE);
+			System.out.printf("\nQuantidade de itens (3) Vestu√°rio: " + quantidadeV + ". Valor em estoque: R$ %.2f",somaV);
 			
 			System.out.println("\nProduto "
 					+ contador + 
-					" IncluÌdo. Digite 0 para incluir mais um ou qualquer outro n˙mero para finalizar.\n");
+					" Inclu√≠do. Digite 0 para incluir mais um ou qualquer outro n√∫mero para finalizar.\n");
 			iniciar = sc.nextInt();
 		}
 			
